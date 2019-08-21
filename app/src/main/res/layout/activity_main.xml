@@ -48,50 +48,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="@string/license_plate"
             android:ems="10"
             android:id="@+id/license_plate" android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/space_one" android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/editText2"/>
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/editText2"
+            android:hint="@string/license_plate"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="@string/brand"
             android:ems="10"
             android:id="@+id/editText2" android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/license_plate" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/editText3"/>
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/editText3"
+            android:hint="@string/brand"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="@string/name"
             android:ems="10"
             android:id="@+id/editText3" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/editText2"
-            app:layout_constraintHorizontal_bias="0.5" android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/button"/>
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/update"
+            android:hint="@string/your_name"/>
     <Button
-            android:text="Button"
+            android:text="@string/update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/update" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:textSize="18sp" android:textColor="#02467A"
+            android:background="#AAE96C"/>
     <Button
-            android:text="Button"
+            android:text="@string/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2"
+            android:id="@+id/delete"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp" android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:textSize="18sp" android:textColor="#FF0000"
+            android:background="#CDDC39"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

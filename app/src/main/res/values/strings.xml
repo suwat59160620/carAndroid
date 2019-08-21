@@ -7,4 +7,9 @@
     <string name="license_plate">License Plate</string>
     <string name="brand">Brand</string>
     <string name="name">NAME</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="license_plate">License Plate</string>
+    <string name="brand">Brand</string>
+    <string name="your_name">Your Name</string>
 </resources>
