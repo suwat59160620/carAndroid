@@ -4,12 +4,10 @@
     <string name="space_one">SPACE ONE</string>
     <string name="space_two">SPACE TWO</string>
     <string name="space_three">SPACE THREE</string>
-    <string name="license_plate">License Plate</string>
-    <string name="brand">Brand</string>
     <string name="name">NAME</string>
     <string name="update">UPDATE</string>
     <string name="delete">DELETE</string>
-    <string name="license_plate">License Plate</string>
-    <string name="brand">Brand</string>
     <string name="your_name">Your Name</string>
+    <string name="license_plate">License Plate</string>
+    <string name="brand">Barnd</string>
 </resources>
