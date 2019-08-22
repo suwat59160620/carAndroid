@@ -3,6 +3,7 @@ package buu.informatics.s59160620.carparking
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import buu.informatics.s59160620.carparking.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
@@ -26,6 +27,18 @@ class MainActivity : AppCompatActivity() {
                 useSlot1()
 
             }
+
+            btn_two.setOnClickListener {
+                btn123 = 2;
+                useSlot2()
+
+            }
+
+            btn_three.setOnClickListener {
+                btn123 = 3;
+                useSlot3()
+
+            }
         }
     }
 
@@ -45,17 +58,51 @@ class MainActivity : AppCompatActivity() {
     private fun useSlot1() {
 
         binding.apply {
-            editTextBrand.visibility = View.VISIBLE
-            editTextLicense.visibility = View.VISIBLE
-            editTextName.visibility = View.VISIBLE
+            license_plate.visibility = View.VISIBLE
+            barnd.visibility = View.VISIBLE
+            name.visibility = View.VISIBLE
 
-            editTextBrand2.visibility = View.GONE
-            editTextLicense2.visibility = View.GONE
-            editTextName2.visibility = View.GONE
+            license_plate2.visibility = View.GONE
+            barnd2.visibility = View.GONE
+            name2.visibility = View.GONE
 
-            editTextBrand3.visibility = View.GONE
-            editTextLicense3.visibility = View.GONE
-            editTextName3.visibility = View.GONE
+            license_plate3.visibility = View.GONE
+            barnd3.visibility = View.GONE
+            name3.visibility = View.GONE
+        }
+    }
+
+    private fun useSlot2() {
+
+        binding.apply {
+            license_plate.visibility = View.GONE
+            barnd.visibility = View.GONE
+            name.visibility = View.GONE
+
+            license_plate2.visibility = View.VISIBLE
+            barnd2.visibility = View.VISIBLE
+            name2.visibility = View.VISIBLE
+
+            license_plate3.visibility = View.GONE
+            barnd3.visibility = View.GONE
+            name3.visibility = View.GONE
+        }
+    }
+
+    private fun useSlot3() {
+
+        binding.apply {
+            license_plate.visibility = View.GONE
+            barnd.visibility = View.GONE
+            name.visibility = View.GONE
+
+            license_plate2.visibility = View.GONE
+            barnd2.visibility = View.GONE
+            name2.visibility = View.GONE
+
+            license_plate3.visibility = View.VISIBLE
+            barnd3.visibility = View.VISIBLE
+            name3.visibility = View.VISIBLE
         }
     }
 
